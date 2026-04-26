@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Größentabelle US ↔ EU — Vollständige Referenz</title>
+<meta name="description" content="Vollständige Größentabelle für den Vergleich von US- und EU-Konfektionsgrößen: Oberbekleidung, Hosen, Schuhe, Handschuhe, Hüte, Unterwäsche und Kindergrößen — inklusive großer Größen weit über EU 54.">
+<meta name="keywords" content="Größentabelle, US Größen, EU Größen, Konfektionsgrößen, Größenvergleich, Umrechnung, Plus Size, Kindergrößen, BH Größen, Schuhgrößen">
+<meta name="author" content="groessentabelle.github.io">
+<meta property="og:title" content="Größentabelle US ↔ EU — Vollständige Referenz">
+<meta property="og:description" content="Vollständige Größentabelle US vs. EU für Kleidung, Schuhe, Unterwäsche und Kinder — endlich auch mit großen Größen weit über EU 54.">
+<meta property="og:type" content="website">
+<meta name="robots" content="index, follow">
+<style>
+  :root {
+    --bg: #f8f7f4;
+    --surface: #ffffff;
+    --surface2: #f2f0ec;
+    --border: #e0ddd6;
+    --border2: #c8c4bc;
+    --text: #1a1916;
+    --muted: #6b6860;
+    --accent: #2d5a8e;
+    --accent-light: #e8f0f9;
+    --accent-dark: #1d3f63;
+    --tag-bg: #edf2fa;
+    --tag-text: #1d4a82;
+    --radius: 8px;
+    --radius-lg: 12px;
+    --shadow: 0 1px 4px rgba(0,0,0,0.08);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141412;
+      --surface: #1e1d1b;
+      --surface2: #272523;
+      --border: #333129;
+      --border2: #4a4740;
+      --text: #f0ede8;
+      --muted: #9a9690;
+      --accent: #5a8fc4;
+      --accent-light: #1a2d42;
+      --accent-dark: #a0c4e8;
+      --tag-bg: #1a2d42;
+      --tag-text: #7ab0e0;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; font-size: 14px; line-height: 1.6; display: flex; flex-direction: column; min-height: 100vh; }
+  .layout { flex: 1; }
+  header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 1.5rem 2rem; display: flex; align-items: baseline; gap: 1rem; flex-wrap: wrap; }
+  header h1 { font-size: 1.3rem; font-weight: 600; color: var(--accent); letter-spacing: -0.02em; }
+  header p { font-size: 12px; color: var(--muted); }
+  .layout { display: flex; min-height: calc(100vh - 65px); }
+  nav { width: 220px; flex-shrink: 0; background: var(--surface); border-right: 1px solid var(--border); padding: 1.25rem 0; position: sticky; top: 0; height: 100vh; overflow-y: auto; }
+  nav .nav-group { margin-bottom: 0.25rem; }
+  nav .nav-label { font-size: 10px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); padding: 0.75rem 1.25rem 0.25rem; }
+  nav a { display: block; padding: 0.45rem 1.25rem; color: var(--muted); text-decoration: none; font-size: 13px; border-left: 2px solid transparent; transition: all 0.12s; }
+  nav a:hover { color: var(--text); background: var(--surface2); }
+  nav a.active { color: var(--accent); border-left-color: var(--accent); background: var(--accent-light); font-weight: 500; }
+  main { flex: 1; padding: 2rem; max-width: 1100px; }
+  .section { display: none; }
+  .section.visible { display: block; }
+  .section-title { font-size: 1.1rem; font-weight: 600; color: var(--text); margin-bottom: 0.25rem; }
+  .section-desc { font-size: 12px; color: var(--muted); margin-bottom: 1.25rem; }
+  .gender-tabs { display: flex; gap: 6px; margin-bottom: 1rem; }
+  .gtab { padding: 5px 14px; border-radius: var(--radius); border: 1px solid var(--border2); background: transparent; font-size: 12px; cursor: pointer; color: var(--muted); transition: all 0.12s; }
+  .gtab.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .gtab:hover:not(.active) { border-color: var(--accent); color: var(--accent); }
+  .subsection { display: none; }
+  .subsection.visible { display: block; }
+  .tbl-wrap { overflow-x: auto; border-radius: var(--radius-lg); border: 1px solid var(--border); box-shadow: var(--shadow); margin-bottom: 0.75rem; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; background: var(--surface); }
+  thead th { background: var(--surface2); font-weight: 600; font-size: 11px; color: var(--muted); padding: 8px 12px; text-align: left; border-bottom: 1px solid var(--border); white-space: nowrap; letter-spacing: 0.03em; }
+  tbody td { padding: 7px 12px; border-bottom: 1px solid var(--border); color: var(--text); white-space: nowrap; }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:hover td { background: var(--accent-light); }
+  td.label { font-weight: 600; color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; width: 160px; }
+  .note { font-size: 11.5px; color: var(--muted); line-height: 1.7; padding: 0.6rem 0.75rem; border-left: 2px solid var(--border2); margin-bottom: 1.5rem; }
+  .tag { display: inline-block; background: var(--tag-bg); color: var(--tag-text); font-size: 10px; font-weight: 600; padding: 2px 7px; border-radius: 4px; letter-spacing: 0.04em; margin-right: 4px; text-transform: uppercase; }
+  .sub-h { font-size: 12px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin: 1.25rem 0 0.5rem; }
+  @media (max-width: 700px) {
+    .layout { flex-direction: column; }
+    nav { width: 100%; height: auto; position: static; border-right: none; border-bottom: 1px solid var(--border); padding: 0.75rem 0; display: flex; flex-wrap: wrap; gap: 0; }
+    nav .nav-label { display: none; }
+    nav a { padding: 0.4rem 0.8rem; font-size: 12px; border-left: none; border-bottom: 2px solid transparent; }
+    nav a.active { border-bottom-color: var(--accent); border-left: none; }
+    main { padding: 1rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Größentabelle US ↔ EU</h1>
+  <p>Vollständige Referenz — Oberbekleidung · Hosen · Schuhe · Handschuhe · Hüte · Unterwäsche · Kinder</p>
+</header>
+<div style="background:var(--accent-light);border-bottom:1px solid var(--border);padding:0.6rem 2rem;font-size:11.5px;color:var(--muted);line-height:1.6;">
+  <strong style="color:var(--accent);">Hinweis:</strong> Alle Maßangaben sind Richtwerte und können je nach Hersteller, Marke, Schnitt und Kollektion abweichen. Körpermaße in cm sind zuverlässiger als Größennummern — im Zweifel immer nachmessen. Altersangaben bei Kindergrößen sind Durchschnittswerte und variieren stark je nach Kind.
+</div>
+
+<div class="layout">
+<nav>
+  <div class="nav-group">
+    <div class="nav-label">Erwachsene</div>
+    <a href="#" onclick="show('ober');return false;" class="active" id="nav-ober">Oberbekleidung</a>
+    <a href="#" onclick="show('hosen');return false;" id="nav-hosen">Hosen</a>
+    <a href="#" onclick="show('schuhe');return false;" id="nav-schuhe">Schuhe</a>
+    <a href="#" onclick="show('handschuhe');return false;" id="nav-handschuhe">Handschuhe</a>
+    <a href="#" onclick="show('huete');return false;" id="nav-huete">Hüte / Caps</a>
+    <a href="#" onclick="show('unterwaesche');return false;" id="nav-unterwaesche">Unterwäsche</a>
+  </div>
+  <div class="nav-group">
+    <div class="nav-label">Kinder</div>
+    <a href="#" onclick="show('kinder-ober');return false;" id="nav-kinder-ober">Oberbekleidung</a>
+    <a href="#" onclick="show('kinder-hosen');return false;" id="nav-kinder-hosen">Hosen</a>
+    <a href="#" onclick="show('kinder-schuhe');return false;" id="nav-kinder-schuhe">Schuhe</a>
+    <a href="#" onclick="show('kinder-handschuhe');return false;" id="nav-kinder-handschuhe">Handschuhe</a>
+    <a href="#" onclick="show('kinder-unterwaesche');return false;" id="nav-kinder-unterwaesche">Unterwäsche</a>
+  </div>
+</nav>
+
+<main>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- OBERBEKLEIDUNG ERWACHSENE -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<div id="ober" class="section visible">
+  <div class="section-title">Oberbekleidung — Erwachsene</div>
+  <div class="section-desc">T-Shirts, Pullover, Jacken, Kleider, Blusen, Hemden</div>
+  <div class="gender-tabs">
+    <button class="gtab active" onclick="showGender('ober','d',this)">Damen</button>
+    <button class="gtab" onclick="showGender('ober','h',this)">Herren</button>
+  </div>
+
+  <div id="ober-d" class="subsection visible">
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Bezeichnung</th><th>XS</th><th>S</th><th>M</th><th>L</th><th>XL</th><th>2XL</th><th>3XL</th><th>4XL</th><th>5XL</th><th>6XL</th><th>7XL</th><th>8XL</th></tr></thead>
+      <tbody>
+        <tr><td class="label">US-Größe</td><td>0–2</td><td>4–6</td><td>8–10</td><td>12–14</td><td>16–18</td><td>20–22</td><td>24–26</td><td>28–30</td><td>32–34</td><td>36–38</td><td>40–42</td><td>44–46</td></tr>
+        <tr><td class="label">EU-Größe</td><td>32–34</td><td>36–38</td><td>40–42</td><td>44–46</td><td>48–50</td><td>52–54</td><td>56–58</td><td>60–62</td><td>64–66</td><td>68–70</td><td>72–74</td><td>76–78</td></tr>
+        <tr><td class="label">UK-Größe</td><td>4–6</td><td>8–10</td><td>12–14</td><td>16–18</td><td>20–22</td><td>24–26</td><td>28–30</td><td>32–34</td><td>36–38</td><td>40–42</td><td>44–46</td><td>48–50</td></tr>
+        <tr><td class="label">Brust (cm)</td><td>76–80</td><td>81–86</td><td>87–92</td><td>93–98</td><td>99–104</td><td>105–110</td><td>111–116</td><td>117–122</td><td>123–130</td><td>131–138</td><td>139–146</td><td>147–154</td></tr>
+        <tr><td class="label">Taille (cm)</td><td>60–64</td><td>65–70</td><td>71–76</td><td>77–82</td><td>83–88</td><td>89–94</td><td>95–100</td><td>101–106</td><td>107–114</td><td>115–122</td><td>123–130</td><td>131–138</td></tr>
+        <tr><td class="label">Hüfte (cm)</td><td>84–88</td><td>89–94</td><td>95–100</td><td>101–106</td><td>107–112</td><td>113–118</td><td>119–124</td><td>125–130</td><td>131–138</td><td>139–146</td><td>147–154</td><td>155–162</td></tr>
+      </tbody>
+    </table></div>
+    <div class="note">US-Damengrößen beginnen bei 0 (sehr schlank) und sind markenabhängig — "Vanity Sizing" verursacht erhebliche Abweichungen. Ab US 14W / EU 48 beginnt der Plus-Size-Bereich.</div>
+  </div>
+
+  <div id="ober-h" class="subsection">
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Bezeichnung</th><th>XS</th><th>S</th><th>M</th><th>L</th><th>XL</th><th>2XL</th><th>3XL</th><th>4XL</th><th>5XL</th><th>6XL</th><th>7XL</th><th>8XL</th></tr></thead>
+      <tbody>
+        <tr><td class="label">US-Größe</td><td>XS</td><td>S</td><td>M</td><td>L</td><td>XL</td><td>2XL</td><td>3XL</td><td>4XL</td><td>5XL</td><td>6XL</td><td>7XL</td><td>8XL</td></tr>
+        <tr><td class="label">EU-Größe</td><td>44–46</td><td>46–48</td><td>48–50</td><td>50–52</td><td>54–56</td><td>58–60</td><td>62–64</td><td>66–68</td><td>70–72</td><td>74–76</td><td>78–80</td><td>82–84</td></tr>
+        <tr><td class="label">Brust (cm)</td><td>86–90</td><td>90–94</td><td>94–98</td><td>98–102</td><td>106–110</td><td>114–118</td><td>122–126</td><td>130–134</td><td>138–142</td><td>146–150</td><td>154–158</td><td>162–166</td></tr>
+        <tr><td class="label">Taille (cm)</td><td>72–76</td><td>76–80</td><td>80–84</td><td>84–88</td><td>92–96</td><td>100–104</td><td>108–112</td><td>116–120</td><td>124–128</td><td>132–136</td><td>140–144</td><td>148–152</td></tr>
+      </tbody>
+    </table></div>
+    <div class="note">EU-Herrengröße = Brustumfang in cm, auf gerade Zahlen gerundet. Ab EU 62 spricht man von "King Size" / großen Größen.</div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- HOSEN ERWACHSENE -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<div id="hosen" class="section">
+  <div class="section-title">Hosen — Erwachsene</div>
+  <div class="section-desc">Jeans, Chinos, Anzughosen, Jogginghosen</div>
+  <div class="gender-tabs">
+    <button class="gtab active" onclick="showGender('hosen','d',this)">Damen</button>
+    <button class="gtab" onclick="showGender('hosen','h',this)">Herren</button>
+  </div>
+
+  <div id="hosen-d" class="subsection visible">
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>EU</th><th>US</th><th>Taille (cm)</th><th>Hüfte (cm)</th><th>Innenlänge S (cm)</th><th>Innenlänge R (cm)</th><th>Innenlänge L (cm)</th></tr></thead>
+      <tbody>
+        <tr><td>32</td><td>00</td><td>60–62</td><td>84–86</td><td>76</td><td>80</td><td>84</td></tr>
+        <tr><td>34</td><td>0</td><td>63–65</td><td>87–89</td><td>76</td><td>80</td><td>84</td></tr>
+        <tr><td>36</td><td>2–4</td><td>66–68</td><td>90–93</td><td>77</td><td>81</td><td>85</td></tr>
+        <tr><td>38</td><td>6–8</td><td>69–72</td><td>94–97</td><td>77</td><td>81</td><td>85</td></tr>
+        <tr><td>40</td><td>10</td><td>73–76</td><td>98–101</td><td>78</td><td>82</td><td>86</td></tr>
+        <tr><td>42</td><td>12–14</td><td>77–81</td><td>102–106</td><td>78</td><td>82</td><td>86</td></tr>
+        <tr><td>44</td><td>16</td><td>82–86</td><td>107–111</td><td>79</td><td>83</td><td>87</td></tr>
+        <tr><td>46</td><td>18</td><td>87–91</td><td>112–116</td><td>79</td><td>83</td><td>87</td></tr>
+        <tr><td>48</td><td>20</td><td>92–96</td><td>117–122</td><td>79</td><td>83</td><td>87</td></tr>
+        <tr><td>50</td><td>22</td><td>97–102</td><td>123–128</td><td>80</td><td>84</td><td>88</td></tr>
+        <tr><td>52</td><td>24</td><td>103–108</td><td>129–134</td><td>80</td><td>84</td><td>88</td></tr>
+        <tr><td>54</td><td>26</td><td>109–114</td><td>135–140</td><td>80</td><td>84</td><td>88</td></tr>
+        <tr><td>56</td><td>28</td><td>115–120</td><td>141–147</td><td>80</td><td>84</td><td>88</td></tr>
+        <tr><td>58</td><td>30</td><td>121–127</td><td>148–154</td><td>80</td><td>84</td><td>88</td></tr>
+        <tr><td>60</td><td>32</td><td>128–134</td><td>155–161</td><td>80</td><td>84</td><td>88</td></tr>
+        <tr><td>62</td><td>34</td><td>135–141</td><td>162–168</td><td>80</td><td>84</td><td>88</td></tr>
+        <tr><td>64</td><td>36</td><td>142–149</td><td>169–176</td><td>80</td><td>84</td><td>88</td></tr>
+        <tr><td>66</td><td>38</td><td>150–157</td><td>177–184</td><td>80</td><td>84</td><td>88</td></tr>
+        <tr><td>68</td><td>40</td><td>158–165</td><td>185–192</td><td>80</td><td>84</td><td>88</td></tr>
+        <tr><td>70</td><td>42</td><td>166–173</td><td>193–200</td><td>80</td><td>84</td><td>88</td></tr>
+        <tr><td>72</td><td>44</td><td>174–182</td><td>201–210</td><td>80</td><td>84</td><td>88</td></tr>
+      </tbody>
+    </table></div>
+    <div class="note">S = Short (bis ca. 163 cm Körpergröße) · R = Regular (164–172 cm) · L = Long (ab 173 cm). US-Damen-Hosennummern sind keine Inch-Maße — es gibt keine mathematische Formel.</div>
+  </div>
+
+  <div id="hosen-h" class="subsection">
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Weite W (Inch)</th><th>Taille (cm)</th><th>EU-Entsprechung</th><th>Länge L30 (ca.)</th><th>Länge L32 (ca.)</th><th>Länge L34 (ca.)</th><th>Länge L36 (ca.)</th></tr></thead>
+      <tbody>
+        <tr><td>28</td><td>71–73</td><td>44</td><td>76 cm</td><td>81 cm</td><td>86 cm</td><td>91 cm</td></tr>
+        <tr><td>29</td><td>74–76</td><td>46</td><td>76 cm</td><td>81 cm</td><td>86 cm</td><td>91 cm</td></tr>
+        <tr><td>30</td><td>77–79</td><td>46–48</td><td>76 cm</td><td>81 cm</td><td>86 cm</td><td>91 cm</td></tr>
+        <tr><td>31</td><td>80–82</td><td>48</td><td>76 cm</td><td>81 cm</td><td>86 cm</td><td>91 cm</td></tr>
+        <tr><td>32</td><td>83–85</td><td>50</td><td>76 cm</td><td>81 cm</td><td>86 cm</td><td>91 cm</td></tr>
+        <tr><td>33</td><td>86–88</td><td>50–52</td><td>76 cm</td><td>81 cm</td><td>86 cm</td><td>91 cm</td></tr>
+        <tr><td>34</td><td>89–91</td><td>52</td><td>76 cm</td><td>81 cm</td><td>86 cm</td><td>91 cm</td></tr>
+        <tr><td>36</td><td>92–96</td><td>54</td><td>76 cm</td><td>81 cm</td><td>86 cm</td><td>91 cm</td></tr>
+        <tr><td>38</td><td>97–102</td><td>56</td><td>76 cm</td><td>81 cm</td><td>86 cm</td><td>91 cm</td></tr>
+        <tr><td>40</td><td>103–108</td><td>58</td><td>76 cm</td><td>81 cm</td><td>86 cm</td><td>91 cm</td></tr>
+        <tr><td>42</td><td>109–114</td><td>60</td><td>76 cm</td><td>81 cm</td><td>86 cm</td><td>91 cm</td></tr>
+        <tr><td>44</td><td>115–120</td><td>62</td><td>76 cm</td><td>81 cm</td><td>86 cm</td><td>91 cm</td></tr>
+        <tr><td>46</td><td>121–127</td><td>64</td><td>76 cm</td><td>81 cm</td><td>86 cm</td><td>91 cm</td></tr>
+        <tr><td>48</td><td>128–134</td><td>66</td><td>76 cm</td><td>81 cm</td><td>86 cm</td><td>91 cm</td></tr>
+        <tr><td>50</td><td>135–141</td><td>68</td><td>76 cm</td><td>81 cm</td><td>86 cm</td><td>91 cm</td></tr>
+        <tr><td>52</td><td>142–149</td><td>70</td><td>76 cm</td><td>81 cm</td><td>86 cm</td><td>91 cm</td></tr>
+        <tr><td>54</td><td>150–157</td><td>72</td><td>76 cm</td><td>81 cm</td><td>86 cm</td><td>91 cm</td></tr>
+        <tr><td>56</td><td>158–165</td><td>74</td><td>76 cm</td><td>81 cm</td><td>86 cm</td><td>91 cm</td></tr>
+        <tr><td>58</td><td>166–174</td><td>76</td><td>76 cm</td><td>81 cm</td><td>86 cm</td><td>91 cm</td></tr>
+        <tr><td>60</td><td>175–183</td><td>78</td><td>76 cm</td><td>81 cm</td><td>86 cm</td><td>91 cm</td></tr>
+        <tr><td>62</td><td>184–192</td><td>80</td><td>76 cm</td><td>81 cm</td><td>86 cm</td><td>91 cm</td></tr>
+        <tr><td>64</td><td>193–202</td><td>82</td><td>76 cm</td><td>81 cm</td><td>86 cm</td><td>91 cm</td></tr>
+      </tbody>
+    </table></div>
+    <div class="note">Herrenhosen: Angabe W/L = Weite / Länge in Inch. L28 = 71 cm · L30 = 76 cm · L32 = 81 cm · L34 = 86 cm · L36 = 91 cm Innenlänge. EU-Herrenhosen-Größe ≈ Taillenumfang (cm) + 16.</div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- SCHUHE ERWACHSENE -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<div id="schuhe" class="section">
+  <div class="section-title">Schuhe — Erwachsene</div>
+  <div class="section-desc">Alle Schuhtypen: Sneaker, Pumps, Boots, Sandalen</div>
+  <div class="gender-tabs">
+    <button class="gtab active" onclick="showGender('schuhe','d',this)">Damen</button>
+    <button class="gtab" onclick="showGender('schuhe','h',this)">Herren</button>
+  </div>
+
+  <div id="schuhe-d" class="subsection visible">
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>EU</th><th>US Women</th><th>UK Women</th><th>Fußlänge (cm)</th></tr></thead>
+      <tbody>
+        <tr><td>33</td><td>3</td><td>1</td><td>21.0</td></tr>
+        <tr><td>34</td><td>3.5</td><td>1.5</td><td>21.5</td></tr>
+        <tr><td>35</td><td>4–4.5</td><td>2–2.5</td><td>22.0–22.5</td></tr>
+        <tr><td>36</td><td>5–5.5</td><td>3–3.5</td><td>22.5–23.0</td></tr>
+        <tr><td>37</td><td>6–6.5</td><td>4–4.5</td><td>23.5–24.0</td></tr>
+        <tr><td>38</td><td>7–7.5</td><td>5–5.5</td><td>24.0–24.5</td></tr>
+        <tr><td>39</td><td>8–8.5</td><td>6–6.5</td><td>25.0–25.5</td></tr>
+        <tr><td>40</td><td>9–9.5</td><td>7–7.5</td><td>25.5–26.0</td></tr>
+        <tr><td>41</td><td>10–10.5</td><td>8–8.5</td><td>26.5–27.0</td></tr>
+        <tr><td>42</td><td>11–11.5</td><td>9–9.5</td><td>27.0–27.5</td></tr>
+        <tr><td>43</td><td>12</td><td>10</td><td>28.0</td></tr>
+        <tr><td>44</td><td>13</td><td>11</td><td>28.5</td></tr>
+        <tr><td>45</td><td>14</td><td>12</td><td>29.0</td></tr>
+      </tbody>
+    </table></div>
+    <div class="note">EU-Schuhgrößen basieren auf der Pariser Stichmaßeinheit (2/3 cm pro Größenstufe). Produzenten weichen teils ±0.5 ab — Füße ausmessen empfohlen.</div>
+  </div>
+
+  <div id="schuhe-h" class="subsection">
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>EU</th><th>US Men</th><th>UK Men</th><th>Fußlänge (cm)</th></tr></thead>
+      <tbody>
+        <tr><td>38</td><td>5.5</td><td>4.5</td><td>24.0</td></tr>
+        <tr><td>39</td><td>6–6.5</td><td>5.5–6</td><td>24.5–25.0</td></tr>
+        <tr><td>40</td><td>7–7.5</td><td>6.5–7</td><td>25.0–25.5</td></tr>
+        <tr><td>41</td><td>8–8.5</td><td>7.5–8</td><td>26.0–26.5</td></tr>
+        <tr><td>42</td><td>9–9.5</td><td>8.5–9</td><td>26.5–27.0</td></tr>
+        <tr><td>43</td><td>10–10.5</td><td>9.5–10</td><td>27.5–28.0</td></tr>
+        <tr><td>44</td><td>11–11.5</td><td>10.5–11</td><td>28.0–28.5</td></tr>
+        <tr><td>45</td><td>12–12.5</td><td>11.5–12</td><td>29.0–29.5</td></tr>
+        <tr><td>46</td><td>13</td><td>12.5</td><td>29.5–30.0</td></tr>
+        <tr><td>47</td><td>13.5–14</td><td>13–13.5</td><td>30.5–31.0</td></tr>
+        <tr><td>48</td><td>14.5–15</td><td>14</td><td>31.5–32.0</td></tr>
+        <tr><td>49</td><td>15.5</td><td>14.5</td><td>32.0–32.5</td></tr>
+        <tr><td>50</td><td>16</td><td>15</td><td>33.0</td></tr>
+        <tr><td>51</td><td>16.5–17</td><td>15.5</td><td>33.5</td></tr>
+        <tr><td>52</td><td>17.5–18</td><td>16–16.5</td><td>34.0</td></tr>
+      </tbody>
+    </table></div>
+    <div class="note">US-Herrenschuhe sind rund 1.5 Nummern größer als US-Damenschuhe. Bei gleicher Fußlänge: Herren US 10 ≈ Damen US 11.5.</div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- HANDSCHUHE -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<div id="handschuhe" class="section">
+  <div class="section-title">Handschuhe</div>
+  <div class="section-desc">Mode-, Leder-, Winter- und Arbeitshandschuhe</div>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>Bezeichnung</th><th>XS</th><th>S</th><th>M</th><th>L</th><th>XL</th><th>2XL</th><th>3XL</th><th>4XL</th><th>5XL</th></tr></thead>
+    <tbody>
+      <tr><td class="label">US / EU Größe</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+      <tr><td class="label">Handumfang (cm)</td><td>15–17</td><td>17–18</td><td>18–20</td><td>20–22</td><td>22–23</td><td>23–25</td><td>25–27</td><td>27–29</td><td>29–31</td></tr>
+      <tr><td class="label">Handlänge (cm)</td><td>16–17</td><td>17–18</td><td>18–19</td><td>19–20</td><td>20–21</td><td>21–22</td><td>22–23</td><td>23–24</td><td>24–25</td></tr>
+    </tbody>
+  </table></div>
+  <div class="note">Handschuhgrößen sind international einheitlich — US und EU nutzen dasselbe System. Maßnahme: Maßband um den Knöchel (breiteste Stelle der Hand, ohne Daumen). Für Arbeitsschutzhandschuhe gilt oft EN 420-Norm (abweichend).</div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- HÜTE -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<div id="huete" class="section">
+  <div class="section-title">Hüte &amp; Caps</div>
+  <div class="section-desc">Fedora, Snapback, Beanie, Baseball-Cap, Sonnenhüte</div>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>EU (cm)</th><th>US-Größe</th><th>UK-Größe</th><th>Kopfumfang (cm)</th><th>Bezeichnung</th></tr></thead>
+    <tbody>
+      <tr><td>51</td><td>6⅜</td><td>6¼</td><td>51</td><td>XXS</td></tr>
+      <tr><td>52</td><td>6½</td><td>6⅜</td><td>52</td><td>XS</td></tr>
+      <tr><td>53</td><td>6⅝</td><td>6½</td><td>53</td><td>XS–S</td></tr>
+      <tr><td>54</td><td>6¾</td><td>6⅝</td><td>54</td><td>S</td></tr>
+      <tr><td>55</td><td>6⅞</td><td>6¾</td><td>55</td><td>S–M</td></tr>
+      <tr><td>56</td><td>7</td><td>6⅞</td><td>56</td><td>M</td></tr>
+      <tr><td>57</td><td>7⅛</td><td>7</td><td>57</td><td>M–L</td></tr>
+      <tr><td>58</td><td>7¼</td><td>7⅛</td><td>58</td><td>L</td></tr>
+      <tr><td>59</td><td>7⅜</td><td>7¼</td><td>59</td><td>L–XL</td></tr>
+      <tr><td>60</td><td>7½</td><td>7⅜</td><td>60</td><td>XL</td></tr>
+      <tr><td>61</td><td>7⅝</td><td>7½</td><td>61</td><td>XL–2XL</td></tr>
+      <tr><td>62</td><td>7¾</td><td>7⅝</td><td>62</td><td>2XL</td></tr>
+      <tr><td>63</td><td>7⅞</td><td>7¾</td><td>63</td><td>2XL–3XL</td></tr>
+      <tr><td>64</td><td>8</td><td>7⅞</td><td>64</td><td>3XL</td></tr>
+      <tr><td>65</td><td>8⅛</td><td>8</td><td>65</td><td>3XL–4XL</td></tr>
+      <tr><td>66</td><td>8¼</td><td>8⅛</td><td>66</td><td>4XL</td></tr>
+      <tr><td>67</td><td>8⅜</td><td>8¼</td><td>67</td><td>4XL–5XL</td></tr>
+      <tr><td>68</td><td>8½</td><td>8⅜</td><td>68</td><td>5XL</td></tr>
+    </tbody>
+  </table></div>
+  <div class="note">EU-Hutgröße = Kopfumfang in cm. US / UK in Inch-Brüchen (Kopfdurchmesser = Umfang ÷ π). UK ist meist 1 Einheit unter US. Maßnahme: Maßband knapp über den Ohren um den Kopf, an der breitesten Stelle (Hinterhaupt).</div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- UNTERWÄSCHE ERWACHSENE -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<div id="unterwaesche" class="section">
+  <div class="section-title">Unterwäsche — Erwachsene</div>
+  <div class="section-desc">Slips, Boxershorts, Strings, Unterhemden, BHs</div>
+  <div class="gender-tabs">
+    <button class="gtab active" onclick="showGender('uw','d',this)">Damen</button>
+    <button class="gtab" onclick="showGender('uw','h',this)">Herren</button>
+  </div>
+
+  <div id="uw-d" class="subsection visible">
+    <div class="sub-h">Slip / Panty / String / Hipster</div>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>EU-Größe</th><th>US-Größe</th><th>Bezeichnung</th><th>Hüftumfang (cm)</th><th>Taillenumfang (cm)</th></tr></thead>
+      <tbody>
+        <tr><td>32–34</td><td>XS / 0</td><td>XS</td><td>82–86</td><td>60–64</td></tr>
+        <tr><td>36–38</td><td>S / 2–4</td><td>S</td><td>87–92</td><td>65–70</td></tr>
+        <tr><td>40–42</td><td>M / 6–8</td><td>M</td><td>93–98</td><td>71–76</td></tr>
+        <tr><td>44–46</td><td>L / 10–12</td><td>L</td><td>99–104</td><td>77–83</td></tr>
+        <tr><td>48–50</td><td>XL / 14–16</td><td>XL</td><td>105–112</td><td>84–91</td></tr>
+        <tr><td>52–54</td><td>2XL / 18–20</td><td>2XL</td><td>113–120</td><td>92–99</td></tr>
+        <tr><td>56–58</td><td>3XL / 22–24</td><td>3XL</td><td>121–130</td><td>100–109</td></tr>
+        <tr><td>60–62</td><td>4XL / 26–28</td><td>4XL</td><td>131–140</td><td>110–119</td></tr>
+        <tr><td>64–66</td><td>5XL / 30–32</td><td>5XL</td><td>141–152</td><td>120–131</td></tr>
+        <tr><td>68–70</td><td>6XL / 34–36</td><td>6XL</td><td>153–164</td><td>132–143</td></tr>
+        <tr><td>72–74</td><td>7XL / 38–40</td><td>7XL</td><td>165–176</td><td>144–155</td></tr>
+        <tr><td>76–78</td><td>8XL / 42–44</td><td>8XL</td><td>177–190</td><td>156–169</td></tr>
+      </tbody>
+    </table></div>
+
+    <div class="sub-h">BH — Unterbrustweite (Bandgröße)</div>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>EU-Band</th><th>US-Band (Inch)</th><th>UK-Band (Inch)</th><th>Unterbrustumfang (cm)</th></tr></thead>
+      <tbody>
+        <tr><td>60</td><td>28</td><td>28</td><td>60–65</td></tr>
+        <tr><td>65</td><td>30</td><td>30</td><td>65–70</td></tr>
+        <tr><td>70</td><td>32</td><td>32</td><td>70–75</td></tr>
+        <tr><td>75</td><td>34</td><td>34</td><td>75–80</td></tr>
+        <tr><td>80</td><td>36</td><td>36</td><td>80–85</td></tr>
+        <tr><td>85</td><td>38</td><td>38</td><td>85–90</td></tr>
+        <tr><td>90</td><td>40</td><td>40</td><td>90–95</td></tr>
+        <tr><td>95</td><td>42</td><td>42</td><td>95–100</td></tr>
+        <tr><td>100</td><td>44</td><td>44</td><td>100–105</td></tr>
+        <tr><td>105</td><td>46</td><td>46</td><td>105–110</td></tr>
+        <tr><td>110</td><td>48</td><td>48</td><td>110–115</td></tr>
+        <tr><td>115</td><td>50</td><td>50</td><td>115–120</td></tr>
+        <tr><td>120</td><td>52</td><td>52</td><td>120–125</td></tr>
+        <tr><td>125</td><td>54</td><td>54</td><td>125–130</td></tr>
+        <tr><td>130</td><td>56</td><td>56</td><td>130–135</td></tr>
+      </tbody>
+    </table></div>
+
+    <div class="sub-h">BH — Körbchengröße</div>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>EU-Körbchen</th><th>US / UK Körbchen</th><th>Differenz Brust − Unterbrustumfang</th></tr></thead>
+      <tbody>
+        <tr><td>AA</td><td>AA</td><td>10–12 cm</td></tr>
+        <tr><td>A</td><td>A</td><td>12–14 cm</td></tr>
+        <tr><td>B</td><td>B</td><td>14–16 cm</td></tr>
+        <tr><td>C</td><td>C</td><td>16–18 cm</td></tr>
+        <tr><td>D</td><td>D</td><td>18–20 cm</td></tr>
+        <tr><td>E</td><td>DD</td><td>20–22 cm</td></tr>
+        <tr><td>F</td><td>DDD / E</td><td>22–24 cm</td></tr>
+        <tr><td>G</td><td>F / DDDD</td><td>24–26 cm</td></tr>
+        <tr><td>H</td><td>G</td><td>26–28 cm</td></tr>
+        <tr><td>I</td><td>H</td><td>28–30 cm</td></tr>
+        <tr><td>J</td><td>I</td><td>30–32 cm</td></tr>
+        <tr><td>K</td><td>J</td><td>32–34 cm</td></tr>
+        <tr><td>L</td><td>K</td><td>34–36 cm</td></tr>
+        <tr><td>M</td><td>L</td><td>36–38 cm</td></tr>
+      </tbody>
+    </table></div>
+    <div class="note">BH-Größe = Bandgröße + Körbchen (z.B. EU 80C = US 36C). Wichtig: US/UK beginnt Körbchen-Sprung schon bei DD, EU bei E — ab EU E weicht die Buchstabenfolge erheblich ab! Unterbrustmaß: unter der Brust messen, in Atemruhe. Brustmaß: an der vollsten Stelle.</div>
+  </div>
+
+  <div id="uw-h" class="subsection">
+    <div class="sub-h">Slip / Boxer / Shorts</div>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>EU-Größe</th><th>US-Größe</th><th>Bezeichnung</th><th>Taillenumfang (cm)</th><th>Hüftumfang (cm)</th></tr></thead>
+      <tbody>
+        <tr><td>3 / 44–46</td><td>XS</td><td>XS</td><td>70–76</td><td>85–91</td></tr>
+        <tr><td>4 / 46–48</td><td>S</td><td>S</td><td>77–83</td><td>92–98</td></tr>
+        <tr><td>5 / 48–50</td><td>M</td><td>M</td><td>84–90</td><td>99–105</td></tr>
+        <tr><td>6 / 50–52</td><td>L</td><td>L</td><td>91–97</td><td>106–112</td></tr>
+        <tr><td>7 / 54–56</td><td>XL</td><td>XL</td><td>98–106</td><td>113–121</td></tr>
+        <tr><td>8 / 58–60</td><td>2XL / XXL</td><td>2XL</td><td>107–116</td><td>122–131</td></tr>
+        <tr><td>9 / 62–64</td><td>3XL</td><td>3XL</td><td>117–127</td><td>132–142</td></tr>
+        <tr><td>10 / 66–68</td><td>4XL</td><td>4XL</td><td>128–138</td><td>143–153</td></tr>
+        <tr><td>11 / 70–72</td><td>5XL</td><td>5XL</td><td>139–149</td><td>154–164</td></tr>
+        <tr><td>12 / 74–76</td><td>6XL</td><td>6XL</td><td>150–161</td><td>165–176</td></tr>
+        <tr><td>13 / 78–80</td><td>7XL</td><td>7XL</td><td>162–173</td><td>177–188</td></tr>
+        <tr><td>14 / 82–84</td><td>8XL</td><td>8XL</td><td>174–186</td><td>189–201</td></tr>
+      </tbody>
+    </table></div>
+    <div class="note">Herren-Unterwäsche: EU-Nummernsystem (3–14) basiert auf dem Taillenumfang. US nutzt durchgehend Buchstabengrößen. Einige Hersteller (z.B. Calvin Klein, Jockey) haben leicht abweichende Zuschnitte.</div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- KINDER OBERBEKLEIDUNG -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<div id="kinder-ober" class="section">
+  <div class="section-title">Oberbekleidung — Kinder</div>
+  <div class="section-desc">T-Shirts, Pullover, Jacken, Kleider — von Neugeboren bis Teen</div>
+
+  <div class="sub-h">Babys &amp; Kleinkinder (0–3 Jahre)</div>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>EU</th><th>US</th><th>Alter (ca.)</th><th>Körpergröße (cm)</th><th>Gewicht (ca. kg)</th></tr></thead>
+    <tbody>
+      <tr><td>50</td><td>Newborn (NB)</td><td>Neugeboren</td><td>47–52</td><td>bis 3.5</td></tr>
+      <tr><td>56</td><td>0–3 M</td><td>1–3 Monate</td><td>53–59</td><td>3.5–6</td></tr>
+      <tr><td>62</td><td>3–6 M</td><td>3–6 Monate</td><td>60–65</td><td>5.5–7.5</td></tr>
+      <tr><td>68</td><td>6–9 M</td><td>6–9 Monate</td><td>66–71</td><td>7–9</td></tr>
+      <tr><td>74</td><td>9–12 M</td><td>9–12 Monate</td><td>72–77</td><td>8.5–10.5</td></tr>
+      <tr><td>80</td><td>12–18 M</td><td>12–18 Monate</td><td>78–83</td><td>10–12</td></tr>
+      <tr><td>86</td><td>18–24 M</td><td>18–24 Monate</td><td>84–89</td><td>11–13</td></tr>
+      <tr><td>92</td><td>2T</td><td>2 Jahre</td><td>90–95</td><td>12–15</td></tr>
+      <tr><td>98</td><td>3T</td><td>3 Jahre</td><td>96–101</td><td>14–17</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="sub-h">Kinder (4–14 Jahre)</div>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>EU</th><th>US</th><th>Alter (ca.)</th><th>Körpergröße (cm)</th><th>Brustumfang (cm)</th><th>Taillenumfang (cm)</th></tr></thead>
+    <tbody>
+      <tr><td>104</td><td>4T / 4</td><td>4 Jahre</td><td>102–107</td><td>54–57</td><td>51–53</td></tr>
+      <tr><td>110</td><td>5</td><td>5 Jahre</td><td>108–113</td><td>57–60</td><td>53–55</td></tr>
+      <tr><td>116</td><td>6</td><td>6 Jahre</td><td>114–119</td><td>60–63</td><td>55–57</td></tr>
+      <tr><td>122</td><td>7</td><td>7 Jahre</td><td>120–125</td><td>63–66</td><td>57–59</td></tr>
+      <tr><td>128</td><td>8</td><td>8 Jahre</td><td>126–131</td><td>66–69</td><td>59–61</td></tr>
+      <tr><td>134</td><td>9–10</td><td>9–10 Jahre</td><td>132–137</td><td>69–72</td><td>61–63</td></tr>
+      <tr><td>140</td><td>10–12</td><td>10–11 Jahre</td><td>138–143</td><td>72–76</td><td>63–65</td></tr>
+      <tr><td>146</td><td>12</td><td>11–12 Jahre</td><td>144–149</td><td>76–80</td><td>65–68</td></tr>
+      <tr><td>152</td><td>14</td><td>12–13 Jahre</td><td>150–155</td><td>80–84</td><td>67–70</td></tr>
+      <tr><td>158</td><td>14–16</td><td>13–14 Jahre</td><td>156–161</td><td>83–87</td><td>69–73</td></tr>
+      <tr><td>164</td><td>16</td><td>14–15 Jahre</td><td>162–167</td><td>86–90</td><td>71–75</td></tr>
+      <tr><td>170</td><td>18</td><td>15–16 Jahre</td><td>168–173</td><td>89–93</td><td>73–77</td></tr>
+      <tr><td>176</td><td>20 / XS Adult</td><td>16+ Jahre</td><td>174–179</td><td>92–96</td><td>75–79</td></tr>
+    </tbody>
+  </table></div>
+  <div class="note">Altersangaben sind Richtwerte — Körpergröße ist zuverlässiger als das Alter. US-Kinderbekleidung nutzt ab 4 Jahren Zahlengrößen (entsprechen dem Alter), ab ca. 8 Jahren auch XS/S/M/L.</div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- KINDER HOSEN -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<div id="kinder-hosen" class="section">
+  <div class="section-title">Hosen — Kinder</div>
+  <div class="section-desc">Jeans, Jogginghosen, Shorts, Latzhosen</div>
+
+  <div class="sub-h">Babys &amp; Kleinkinder (0–3 Jahre)</div>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>EU</th><th>US</th><th>Alter</th><th>Körpergröße (cm)</th><th>Taillenumfang (cm)</th><th>Innenlänge (cm)</th></tr></thead>
+    <tbody>
+      <tr><td>50</td><td>NB</td><td>Neugeboren</td><td>47–52</td><td>43–46</td><td>18–20</td></tr>
+      <tr><td>56</td><td>0–3 M</td><td>1–3 Monate</td><td>53–59</td><td>44–47</td><td>20–23</td></tr>
+      <tr><td>62</td><td>3–6 M</td><td>3–6 Monate</td><td>60–65</td><td>46–49</td><td>24–27</td></tr>
+      <tr><td>68</td><td>6–9 M</td><td>6–9 Monate</td><td>66–71</td><td>48–51</td><td>28–31</td></tr>
+      <tr><td>74</td><td>9–12 M</td><td>9–12 Monate</td><td>72–77</td><td>50–53</td><td>32–35</td></tr>
+      <tr><td>80</td><td>12–18 M</td><td>12–18 Monate</td><td>78–83</td><td>51–54</td><td>36–39</td></tr>
+      <tr><td>86</td><td>18–24 M</td><td>18–24 Monate</td><td>84–89</td><td>52–55</td><td>40–43</td></tr>
+      <tr><td>92</td><td>2T</td><td>2 Jahre</td><td>90–95</td><td>53–56</td><td>44–47</td></tr>
+      <tr><td>98</td><td>3T</td><td>3 Jahre</td><td>96–101</td><td>54–57</td><td>48–51</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="sub-h">Kinder (4–14 Jahre)</div>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>EU</th><th>US</th><th>Alter (ca.)</th><th>Körpergröße (cm)</th><th>Taillenumfang (cm)</th><th>Hüftumfang (cm)</th><th>Innenlänge (cm)</th></tr></thead>
+    <tbody>
+      <tr><td>104</td><td>4</td><td>4 Jahre</td><td>102–107</td><td>51–54</td><td>56–59</td><td>52–55</td></tr>
+      <tr><td>110</td><td>5</td><td>5 Jahre</td><td>108–113</td><td>53–56</td><td>59–62</td><td>57–60</td></tr>
+      <tr><td>116</td><td>6</td><td>6 Jahre</td><td>114–119</td><td>55–58</td><td>62–65</td><td>62–65</td></tr>
+      <tr><td>122</td><td>7</td><td>7 Jahre</td><td>120–125</td><td>57–60</td><td>65–68</td><td>66–69</td></tr>
+      <tr><td>128</td><td>8</td><td>8 Jahre</td><td>126–131</td><td>59–62</td><td>67–71</td><td>70–74</td></tr>
+      <tr><td>134</td><td>9–10</td><td>9–10 Jahre</td><td>132–137</td><td>61–64</td><td>70–74</td><td>75–79</td></tr>
+      <tr><td>140</td><td>10–12</td><td>10–11 Jahre</td><td>138–143</td><td>63–66</td><td>73–77</td><td>80–84</td></tr>
+      <tr><td>146</td><td>12</td><td>11–12 Jahre</td><td>144–149</td><td>65–69</td><td>77–81</td><td>84–88</td></tr>
+      <tr><td>152</td><td>14</td><td>12–13 Jahre</td><td>150–155</td><td>67–71</td><td>80–85</td><td>88–92</td></tr>
+      <tr><td>158</td><td>14–16</td><td>13–14 Jahre</td><td>156–161</td><td>69–73</td><td>84–89</td><td>92–96</td></tr>
+      <tr><td>164</td><td>16</td><td>14–15 Jahre</td><td>162–167</td><td>71–75</td><td>88–93</td><td>96–100</td></tr>
+      <tr><td>170</td><td>18</td><td>15–16 Jahre</td><td>168–173</td><td>73–77</td><td>92–97</td><td>100–104</td></tr>
+      <tr><td>176</td><td>20</td><td>16+ Jahre</td><td>174–179</td><td>75–79</td><td>96–101</td><td>103–107</td></tr>
+    </tbody>
+  </table></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- KINDER SCHUHE -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<div id="kinder-schuhe" class="section">
+  <div class="section-title">Schuhe — Kinder</div>
+  <div class="section-desc">Baby-, Kleinkind- und Kinderschuhe bis Jugendbereiche</div>
+
+  <div class="sub-h">Babys &amp; Kleinkinder (bis ca. 3 Jahre / EU bis 26)</div>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>EU</th><th>US Toddler</th><th>UK</th><th>Fußlänge (cm)</th><th>Alter (ca.)</th></tr></thead>
+    <tbody>
+      <tr><td>15</td><td>1</td><td>0.5</td><td>9.0</td><td>0–3 M</td></tr>
+      <tr><td>16</td><td>1.5</td><td>1</td><td>9.5</td><td>3–6 M</td></tr>
+      <tr><td>17</td><td>2</td><td>1.5</td><td>10.0</td><td>6–9 M</td></tr>
+      <tr><td>18</td><td>3</td><td>2.5</td><td>11.0</td><td>9–12 M</td></tr>
+      <tr><td>19</td><td>3.5</td><td>3</td><td>11.5</td><td>12–18 M</td></tr>
+      <tr><td>20</td><td>4</td><td>3.5</td><td>12.0</td><td>18–24 M</td></tr>
+      <tr><td>21</td><td>5</td><td>4.5</td><td>12.5–13.0</td><td>2 Jahre</td></tr>
+      <tr><td>22</td><td>6</td><td>5</td><td>13.5</td><td>2–3 Jahre</td></tr>
+      <tr><td>23</td><td>7</td><td>6</td><td>14.0</td><td>3 Jahre</td></tr>
+      <tr><td>24</td><td>8</td><td>7</td><td>15.0</td><td>3–4 Jahre</td></tr>
+      <tr><td>25</td><td>9</td><td>7.5</td><td>15.5</td><td>4 Jahre</td></tr>
+      <tr><td>26</td><td>10</td><td>8.5</td><td>16.0</td><td>4–5 Jahre</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="sub-h">Kinder &amp; Jugendliche (ca. 5–16 Jahre / EU 27–40)</div>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>EU</th><th>US Kids / Youth</th><th>UK</th><th>Fußlänge (cm)</th><th>Alter (ca.)</th></tr></thead>
+    <tbody>
+      <tr><td>27</td><td>10.5</td><td>9</td><td>17.0</td><td>5 Jahre</td></tr>
+      <tr><td>28</td><td>11</td><td>10</td><td>17.5</td><td>5–6 Jahre</td></tr>
+      <tr><td>29</td><td>12</td><td>11</td><td>18.0</td><td>6 Jahre</td></tr>
+      <tr><td>30</td><td>12.5</td><td>11.5</td><td>18.5</td><td>7 Jahre</td></tr>
+      <tr><td>31</td><td>13</td><td>12</td><td>19.5</td><td>7–8 Jahre</td></tr>
+      <tr><td>32</td><td>1Y (Youth)</td><td>13</td><td>20.0</td><td>8 Jahre</td></tr>
+      <tr><td>33</td><td>2Y</td><td>1</td><td>20.5</td><td>8–9 Jahre</td></tr>
+      <tr><td>34</td><td>2.5Y</td><td>1.5</td><td>21.5</td><td>9 Jahre</td></tr>
+      <tr><td>35</td><td>3Y</td><td>2.5</td><td>22.0</td><td>9–10 Jahre</td></tr>
+      <tr><td>36</td><td>4Y</td><td>3.5</td><td>22.5</td><td>10–11 Jahre</td></tr>
+      <tr><td>37</td><td>5Y</td><td>4</td><td>23.5</td><td>11 Jahre</td></tr>
+      <tr><td>38</td><td>5.5Y</td><td>5</td><td>24.0</td><td>12 Jahre</td></tr>
+      <tr><td>39</td><td>6Y</td><td>5.5</td><td>24.5</td><td>12–13 Jahre</td></tr>
+      <tr><td>40</td><td>7Y</td><td>6.5</td><td>25.5</td><td>13–14 Jahre</td></tr>
+    </tbody>
+  </table></div>
+  <div class="note">US-Kinderschuhe: bis EU 31 = "Toddler/Kids" (K), ab EU 32 = "Youth" (Y). Ab EU 38–39 überlappen Kinder- und Erwachsenengrößen — dann auf die Erwachsenentabelle wechseln.</div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- KINDER HANDSCHUHE -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<div id="kinder-handschuhe" class="section">
+  <div class="section-title">Handschuhe — Kinder</div>
+  <div class="section-desc">Winter-, Mode- und Sporthandschuhe für Babys, Kinder und Jugendliche</div>
+
+  <div class="sub-h">Babys &amp; Kleinkinder (0–3 Jahre)</div>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>Bezeichnung</th><th>0–6 M</th><th>6–12 M</th><th>12–18 M</th><th>18–24 M</th><th>2–3 J</th></tr></thead>
+    <tbody>
+      <tr><td class="label">EU / US Größe</td><td>0</td><td>1</td><td>1–2</td><td>2</td><td>2–3</td></tr>
+      <tr><td class="label">Handumfang (cm)</td><td>9–10</td><td>10–11</td><td>11–12</td><td>12–13</td><td>13–14</td></tr>
+      <tr><td class="label">Handlänge (cm)</td><td>7–8</td><td>8–9</td><td>9–10</td><td>10–11</td><td>11–12</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="sub-h">Kinder &amp; Jugendliche (4–16 Jahre)</div>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>EU / US Größe</th><th>Bezeichnung</th><th>Alter (ca.)</th><th>Handumfang (cm)</th><th>Handlänge (cm)</th></tr></thead>
+    <tbody>
+      <tr><td>3</td><td>XS Kids</td><td>4–5 Jahre</td><td>13–14</td><td>12–13</td></tr>
+      <tr><td>4</td><td>S Kids</td><td>5–7 Jahre</td><td>14–15</td><td>13–14</td></tr>
+      <tr><td>4½</td><td>S–M Kids</td><td>7–9 Jahre</td><td>15–16</td><td>14–15</td></tr>
+      <tr><td>5</td><td>M Kids</td><td>9–11 Jahre</td><td>16–17</td><td>15–16</td></tr>
+      <tr><td>5½</td><td>M–L Kids / Youth S</td><td>11–13 Jahre</td><td>17–18</td><td>16–17</td></tr>
+      <tr><td>6</td><td>Youth M / Adult XS</td><td>13–16 Jahre</td><td>15–17</td><td>16–17</td></tr>
+    </tbody>
+  </table></div>
+  <div class="note">Kinder-Handschuhgrößen sind international weitgehend einheitlich — EU und US nutzen dasselbe Nummernsystem. Ab Größe 6 (ca. 13–16 Jahre) überlappen Kinder- und Erwachsenengrößen. Maßnahme: Maßband um die Knöchel der Hand (breiteste Stelle, ohne Daumen). Fäustlinge für Kleinkinder werden oft nur nach Alter / Konfektionsgröße angeboten.</div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- KINDER UNTERWÄSCHE -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<div id="kinder-unterwaesche" class="section">
+  <div class="section-title">Unterwäsche — Kinder</div>
+  <div class="section-desc">Slip, Unterhose, Unterhemd — Mädchen und Jungen</div>
+
+  <div class="sub-h">Babies &amp; Kleinkinder (0–3 Jahre)</div>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>EU</th><th>US</th><th>Alter</th><th>Körpergröße (cm)</th><th>Taillenumfang (cm)</th><th>Hüftumfang (cm)</th></tr></thead>
+    <tbody>
+      <tr><td>50–56</td><td>NB / 0–3M</td><td>0–3 Monate</td><td>bis 59</td><td>40–44</td><td>42–46</td></tr>
+      <tr><td>62–68</td><td>3–9M</td><td>3–9 Monate</td><td>60–71</td><td>44–48</td><td>46–52</td></tr>
+      <tr><td>74–80</td><td>9–18M</td><td>9–18 Monate</td><td>72–83</td><td>48–52</td><td>52–57</td></tr>
+      <tr><td>86–92</td><td>18M–2T</td><td>18 M – 2 Jahre</td><td>84–95</td><td>52–55</td><td>57–62</td></tr>
+      <tr><td>98</td><td>3T</td><td>3 Jahre</td><td>96–101</td><td>54–57</td><td>62–66</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="sub-h">Kinder (4–14 Jahre)</div>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>EU</th><th>US</th><th>Alter (ca.)</th><th>Körpergröße (cm)</th><th>Taillenumfang (cm)</th><th>Hüftumfang (cm)</th></tr></thead>
+    <tbody>
+      <tr><td>104</td><td>4</td><td>4 Jahre</td><td>102–107</td><td>51–54</td><td>57–61</td></tr>
+      <tr><td>110</td><td>5</td><td>5 Jahre</td><td>108–113</td><td>53–56</td><td>60–64</td></tr>
+      <tr><td>116</td><td>6</td><td>6 Jahre</td><td>114–119</td><td>55–58</td><td>63–67</td></tr>
+      <tr><td>122</td><td>7</td><td>7 Jahre</td><td>120–125</td><td>57–60</td><td>66–70</td></tr>
+      <tr><td>128</td><td>8</td><td>8 Jahre</td><td>126–131</td><td>59–62</td><td>69–73</td></tr>
+      <tr><td>134</td><td>9–10</td><td>9–10 Jahre</td><td>132–137</td><td>61–65</td><td>72–77</td></tr>
+      <tr><td>140</td><td>10–12</td><td>10–11 Jahre</td><td>138–143</td><td>63–67</td><td>76–81</td></tr>
+      <tr><td>146</td><td>12</td><td>11–12 Jahre</td><td>144–149</td><td>65–69</td><td>80–85</td></tr>
+      <tr><td>152</td><td>14</td><td>12–13 Jahre</td><td>150–155</td><td>67–71</td><td>84–89</td></tr>
+      <tr><td>158</td><td>14–16</td><td>13–14 Jahre</td><td>156–161</td><td>69–73</td><td>88–93</td></tr>
+      <tr><td>164</td><td>16</td><td>14–15 Jahre</td><td>162–167</td><td>71–75</td><td>92–97</td></tr>
+      <tr><td>170</td><td>18</td><td>15–16 Jahre</td><td>168–173</td><td>73–77</td><td>96–101</td></tr>
+      <tr><td>176</td><td>20</td><td>16+ Jahre</td><td>174–179</td><td>75–79</td><td>100–105</td></tr>
+    </tbody>
+  </table></div>
+  <div class="note">Kinder-Unterwäsche richtet sich primär nach der Körpergröße (EU-Größe = Körpergröße in cm). Altersangaben sind Mittelwerte — Größe ist zuverlässiger. Mädchen-BHs beginnen in der Regel ab EU 140–146 (ca. 10–12 Jahre) in Kinderbereichen (AA/A-Körbchen, sehr kleine Bandgrößen 55–65).</div>
+</div>
+
+</main>
+</div>
+<footer style="position:sticky;bottom:0;z-index:10;text-align:center;padding:0.6rem 2rem;font-size:11px;color:var(--muted);border-top:1px solid var(--border);background:var(--surface);">
+  Alle Angaben ohne Gewähr — Richtwerte, die je nach Hersteller und Kollektion abweichen können. &nbsp;·&nbsp; Stand: 2025 &nbsp;·&nbsp;
+  <a href="#" onclick="document.getElementById('impressum-modal').style.display='flex';return false;" style="color:var(--accent);text-decoration:none;">Impressum</a>
+</footer>
+
+<!-- ═══ DATENSCHUTZ-POPUP (unten-rechts) ═══ -->
+<div id="privacy-popup" style="position:fixed;bottom:3rem;right:1.25rem;z-index:100;max-width:310px;background:var(--surface);border:1px solid var(--border2);border-radius:var(--radius-lg);box-shadow:0 4px 20px rgba(0,0,0,0.15);padding:1rem 1.1rem 0.85rem;display:none;">
+  <div style="display:flex;align-items:flex-start;gap:0.6rem;margin-bottom:0.5rem;">
+    <span style="font-size:18px;line-height:1;">🔒</span>
+    <strong style="font-size:13px;color:var(--text);">Datenschutzhinweis</strong>
+  </div>
+  <p style="font-size:12px;color:var(--muted);line-height:1.6;margin-bottom:0.75rem;">
+    Diese Seite erhebt, speichert oder überträgt <strong>keinerlei persönliche Daten</strong>. Es werden keine Cookies gesetzt, kein Tracking durchgeführt und keine Analyse-Tools eingesetzt. Die Seite funktioniert vollständig ohne Server-Kommunikation.
+  </p>
+  <p style="font-size:12px;color:var(--muted);line-height:1.6;margin-bottom:0.75rem;">Informationen zum Datenschutz von Github sind hier verfügbar: <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" style="color:var(--accent);">Github Datenschutzerklärung</a></p>
+  <button onclick="closePrivacy()" style="width:100%;padding:6px;border-radius:var(--radius);border:1px solid var(--accent);background:var(--accent);color:#fff;font-size:12px;cursor:pointer;">Verstanden</button>
+</div>
+
+<!-- ═══ IMPRESSUM-MODAL ═══ -->
+<div id="impressum-modal" onclick="if(event.target===this)this.style.display='none'" style="display:none;position:fixed;inset:0;z-index:200;background:rgba(0,0,0,0.45);align-items:center;justify-content:center;padding:1rem;">
+  <div style="background:var(--surface);border-radius:var(--radius-lg);border:1px solid var(--border);max-width:480px;width:100%;padding:1.75rem 2rem;position:relative;">
+    <button onclick="document.getElementById('impressum-modal').style.display='none'" style="position:absolute;top:1rem;right:1rem;background:transparent;border:none;font-size:18px;cursor:pointer;color:var(--muted);line-height:1;">✕</button>
+    <h2 style="font-size:1rem;font-weight:600;color:var(--text);margin-bottom:1.25rem;">Impressum</h2>
+
+    <p style="font-size:12px;color:var(--muted);margin-bottom:1rem;">Angaben gemäß § 25 des österreichischen Mediengesetzes (Offenlegungspflicht)</p>
+
+    <div style="font-size:13px;color:var(--text);line-height:2;">
+      <!-- Name / Firma -->
+      <strong>&#077;&#097;&#114;&#107;&#117;&#115;&#032;&#080;&#101;&#116;&#097;&#117;&#116;&#115;&#099;&#104;&#110;&#105;&#103;</strong><br>
+      <!-- STRASSE / HAUSNUMMER -->
+      <!-- PLZ / ORT -->
+      &#054;&#048;&#050;&#048;&#032;&#073;&#110;&#110;&#115;&#098;&#114;&#117;&#099;&#107;<br>
+      <!-- LAND -->
+      Ö&#115;&#116;&#101;&#114;&#114;&#101;&#105;&#099;&#104;
+    </div>
+
+    <div style="margin-top:1rem;font-size:13px;color:var(--text);line-height:2;">
+      <strong>Kontakt</strong><br>
+      E-Mail: <a href="mailto:&#109;&#097;&#114;&#107;&#117;&#115;&#095;&#112;&#101;&#116;&#097;&#117;&#116;&#115;&#099;&#104;&#110;&#105;&#103;&#064;&#121;&#097;&#104;&#111;&#111;&#046;&#100;&#101;" style="color:var(--accent);">&#109;&#097;&#114;&#107;&#117;&#115;&#095;&#112;&#101;&#116;&#097;&#117;&#116;&#115;&#099;&#104;&#110;&#105;&#103;&#064;&#121;&#097;&#104;&#111;&#111;&#046;&#100;&#101;</a>
+    </div>
+
+    <div style="margin-top:1rem;font-size:12px;color:var(--muted);line-height:1.7;border-top:1px solid var(--border);padding-top:1rem;">
+      <strong style="color:var(--text);">Datenschutz</strong><br>
+      Diese Webseite erhebt, speichert oder verarbeitet keinerlei personenbezogene Daten. Es werden keine Cookies gesetzt, kein Tracking durchgeführt und keine externen Dienste eingebunden. Es findet keine Kommunikation mit externen Servern statt.<br>
+      Informationen zum Datenschutz von Github sind hier verfügbar: <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" style="color:var(--accent);">Github Datenschutzerklärung</a>
+    </div>
+
+    <div style="margin-top:1rem;font-size:12px;color:var(--muted);line-height:1.7;border-top:1px solid var(--border);padding-top:1rem;">
+      <strong style="color:var(--text);">Haftungsausschluss</strong><br>
+      Alle Größenangaben auf dieser Seite sind Richtwerte ohne Gewähr. Sie können je nach Hersteller, Marke, Kollektion und Produktionsland abweichen. Eine Haftung für die Richtigkeit, Vollständigkeit oder Aktualität der Angaben wird nicht übernommen.
+    </div>
+  </div>
+</div>
+
+<script>
+function show(id) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('visible'));
+  document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+  document.getElementById(id).classList.add('visible');
+  document.getElementById('nav-' + id).classList.add('active');
+  window.scrollTo(0, 0);
+}
+function showGender(section, gender, btn) {
+  const sec = document.getElementById(section) || document.querySelector('.section.visible');
+  sec.querySelectorAll('.gtab').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+  sec.querySelectorAll('.subsection').forEach(s => s.classList.remove('visible'));
+  const target = document.getElementById(section + '-' + gender) || document.getElementById('uw-' + gender);
+  if (target) target.classList.add('visible');
+}
+function closePrivacy() {
+  document.getElementById('privacy-popup').style.display = 'none';
+  localStorage.setItem('privacy-ok', '1');
+}
+window.addEventListener('load', function() {
+  if (!localStorage.getItem('privacy-ok')) {
+    setTimeout(function() {
+      document.getElementById('privacy-popup').style.display = 'block';
+    }, 800);
+  }
+});
+</script>
+</body>
+</html>
